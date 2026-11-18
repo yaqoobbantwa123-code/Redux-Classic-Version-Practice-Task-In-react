@@ -1,0 +1,97 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.counter-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 45px 35px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.counter-card h1 {
+  font-size: 27px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #c4b5fd;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.count {
+  font-size: 75px;
+  font-weight: 800;
+  color: #a5b4fc;
+  margin-bottom: 35px;
+}
+
+.button-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.button-group button {
+  border: none;
+  padding: 14px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.increment-btn {
+  background: #6366f1;
+  color: white;
+}
+
+.decrement-btn {
+  background: #ec4899;
+  color: white;
+}
+
+.reset-btn {
+  background: #374151;
+  color: white;
+}
+
+.amount-btn {
+  background: #10b981;
+  color: white;
+}
+
+.button-group button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.12);
+}
+
+.button-group button:active {
+  transform: scale(0.96);
+}
+
+@media (max-width: 480px) {
+  .counter-card {
+    padding: 35px 22px;
+  }
+
+  .counter-card h1 {
+    font-size: 23px;
+  }
+
+  .count {
+    font-size: 65px;
+  }
+}
